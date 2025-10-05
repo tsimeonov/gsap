@@ -19,13 +19,21 @@ const GsapTimeline = () => {
 		});
 
 		timeline.to('#yellow-box', {
-			x: 400,
-			scale: 1,
+			y: 250,
+			scale: 2,
 			rotation: 360,
-			borderRadius: '8px',
+			borderRadius: '100%',
 			duration: 2,
 			ease: 'back.inOut',
-		});
+		}),
+			timeline.to('#yellow-box', {
+				x: 400,
+				scale: 1,
+				rotation: 360,
+				borderRadius: '8px',
+				duration: 2,
+				ease: 'back.inOut',
+			});
 	});
 
 	return (
